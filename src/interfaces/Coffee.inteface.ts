@@ -1,4 +1,4 @@
-export interface CoffeResponse {
+export interface CoffeeResponse {
   id: number;
   name: string;
   image: string;

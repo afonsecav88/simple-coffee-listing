@@ -1,0 +1,25 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-image {
+  width: 1280px;
+  min-width: 40vw;
+  height: 35vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-coffee {
+  position: relative;
+  top: -4vh;
+  width: 40vw;
+  height: 40vh;
+  background-color: antiquewhite;
+}
