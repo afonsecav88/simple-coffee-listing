@@ -1,16 +1,27 @@
+import { useState } from 'react';
+import { useAvailableProduct } from '../hooks/useAvailableProduct';
 import { useCoffeService } from '../hooks/useCoffeService';
 import { CoffeeCardsList } from './CoffeeCardsList';
 import { CoffeeFilterButtons } from './CoffeeFilterButtons';
 import { ContainerContainerHeader } from './ContainerContainerHeader';
 
 export const ContainerCoffee = () => {
-  const { coffeDate } = useCoffeService();
-  console.log('coffeDate', coffeDate);
+  const { coffeData } = useCoffeService();
+  const [isAllProducts, setIsAllProducts] = useState(true);
+  const coffeDataFilter = useAvailableProduct(isAllProducts);
+
+  const coffeeProducts = () => {
+    return isAllProducts ? coffeData : coffeDataFilter;
+  };
+
   return (
     <div className="container-coffee">
       <ContainerContainerHeader />
-      <CoffeeFilterButtons />
-      <CoffeeCardsList coffeData={coffeDate} />
+      <CoffeeFilterButtons
+        isAllProducts={isAllProducts}
+        setIsAllProducts={setIsAllProducts}
+      />
+      <CoffeeCardsList coffeData={coffeeProducts()} />
     </div>
   );
 };

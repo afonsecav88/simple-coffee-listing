@@ -1,11 +1,9 @@
-import { useState } from 'react';
 import { CoffeeResponse } from '../interfaces/Coffee.inteface';
 
 interface CoffeeCardItemProps {
   coffeeItem: CoffeeResponse;
 }
 export const CoffeeCardItem = ({ coffeeItem }: CoffeeCardItemProps) => {
-  const [isAllProducts, setIsAllProducts] = useState(false);
   const { image, available, name, popular, price, rating, votes } = coffeeItem;
   return (
     <div className="card-container">

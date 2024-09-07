@@ -3,7 +3,7 @@ import { coffeService } from '../services/Coffee.service';
 import { CoffeeResponse } from '../interfaces/Coffee.inteface';
 
 export const useCoffeService = () => {
-  const [coffeDate, setCoffeeData] = useState<CoffeeResponse[]>([]);
+  const [coffeData, setCoffeeData] = useState<CoffeeResponse[]>([]);
 
   useEffect(() => {
     coffeService()
@@ -17,5 +17,5 @@ export const useCoffeService = () => {
         throw new Error('Errot');
       });
   }, []);
-  return { coffeDate };
+  return { coffeData };
 };
