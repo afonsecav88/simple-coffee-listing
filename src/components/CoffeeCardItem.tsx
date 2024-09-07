@@ -5,21 +5,27 @@ interface CoffeeCardItemProps {
   coffeeItem: CoffeeResponse;
 }
 export const CoffeeCardItem = ({ coffeeItem }: CoffeeCardItemProps) => {
-  const [vote, setVote] = useState();
-  const { image, available, name, popular, price, rating, votes, id } =
-    coffeeItem;
+  const [isAllProducts, setIsAllProducts] = useState(false);
+  const { image, available, name, popular, price, rating, votes } = coffeeItem;
   return (
     <div className="card-container">
+      {popular !== null && popular && <p className="popular-coffee">Popular</p>}
       <img src={image} alt={name} className="coffee-card-image" />
       <div className="card-name-price">
         <p>{name}</p>
         <p>{price}</p>
       </div>
-      <div>
-        <p>
+      <div className="card-rate-votes">
+        {votes !== 0 ? (
+          <img src="src/assets/Star_fill.svg" alt="rating" />
+        ) : (
           <img src="src/assets/Star.svg" alt="rating" />
-          {rating} (10 votes)
+        )}
+
+        <p>
+          {rating} ({votes} votes)
         </p>
+        {votes === 122 && <p className="sold-out-coffe">Sold out</p>}
         {available}
       </div>
     </div>

@@ -40,7 +40,7 @@
   position: absolute;
   top: 2rem;
   z-index: -1;
-  right: 18rem;
+  margin-left: 15rem;
 }
 
 .container-coffee-header h1 {
@@ -101,6 +101,7 @@
 .card-name-price {
   display: inline-flex;
   justify-content: space-between;
+  font-weight: 600;
 }
 
 .card-name-price p:last-child {
@@ -110,4 +111,28 @@
   padding: .3rem .5rem;
   color: #111315;
   border-radius: .2rem;
+}
+
+.card-rate-votes {
+  display: inline-flex;
+  gap: .3rem;
+  margin-top: -1.1rem;
+}
+
+.popular-coffee {
+  position: absolute;
+  background-color: #F6C768;
+  padding: .2rem .5rem;
+  border-radius: .8rem;
+  margin-left: .5rem;
+  margin-top: 0.6rem;
+  color: #111315;
+  font-size: small;
+  font-weight: 600;
+}
+
+.sold-out-coffe {
+  margin-left: 2.5rem;
+  font-weight: bolder;
+  color: #ED735D;
 }
