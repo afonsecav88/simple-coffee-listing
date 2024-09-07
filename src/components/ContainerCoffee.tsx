@@ -1,5 +1,6 @@
 import { useCoffeService } from '../hooks/useCoffeService';
 import { CoffeeCardsList } from './CoffeeCardsList';
+import { CoffeeFilterButtons } from './CoffeeFilterButtons';
 import { ContainerContainerHeader } from './ContainerContainerHeader';
 
 export const ContainerCoffee = () => {
@@ -8,6 +9,7 @@ export const ContainerCoffee = () => {
   return (
     <div className="container-coffee">
       <ContainerContainerHeader />
+      <CoffeeFilterButtons />
       <CoffeeCardsList coffeData={coffeDate} />
     </div>
   );
