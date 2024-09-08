@@ -53,6 +53,7 @@
   text-align: center;
   color: #6F757C;
   margin: .5rem;
+  font-weight: 500;
 }
 
 .coffee-filter-container {
@@ -92,6 +93,11 @@
   width: 16rem;
   height: 10rem;
   border-radius: .5rem;
+  transition: transform 0.3s ease;
+}
+
+.coffee-card-image:hover {
+  transform: scale(1.05);
 }
 
 .card-name-price {
@@ -113,6 +119,11 @@
   display: inline-flex;
   gap: .3rem;
   margin-top: -1.1rem;
+}
+
+.card-votes-text {
+  color: #6F757C;
+  font-weight: 600;
 }
 
 .popular-coffee {

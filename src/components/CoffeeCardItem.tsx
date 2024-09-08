@@ -19,10 +19,12 @@ export const CoffeeCardItem = ({ coffeeItem }: CoffeeCardItemProps) => {
         ) : (
           <img src="src/assets/Star.svg" alt="rating" />
         )}
-
-        <p>
-          {rating} ({votes} votes)
-        </p>
+        <p>{rating} </p>{' '}
+        {votes ? (
+          <p className="card-votes-text">({votes} votes)</p>
+        ) : (
+          <p className="card-votes-text">No ratings</p>
+        )}
         {votes === 122 && <p className="sold-out-coffe">Sold out</p>}
         {available}
       </div>
