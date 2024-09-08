@@ -24,8 +24,8 @@
   height: auto;
   background-color: #1B1D1F;
   border-radius: .5rem;
-  padding-bottom: 5rem;
-  z-index: 1
+  padding: 0rem 2rem 5rem 2rem;
+  z-index: 1;
 }
 
 .container-coffee-header {
