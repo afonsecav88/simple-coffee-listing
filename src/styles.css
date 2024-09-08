@@ -7,7 +7,7 @@
 .header-image {
   width: 100vw;
   min-width: 40vw;
-  height: 28vh;
+  height: 26vh;
   object-fit: fill;
 }
 
@@ -19,7 +19,7 @@
 
 .container-coffee {
   position: relative;
-  top: -13vh;
+  top: -12vh;
   width: 84vw;
   max-width: 68.5rem;
   height: auto;
