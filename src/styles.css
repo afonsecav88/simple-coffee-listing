@@ -8,6 +8,7 @@
   width: 100vw;
   min-width: 40vw;
   height: 35vh;
+  object-fit: fill;
 }
 
 .container {
@@ -147,3 +148,29 @@
 .isButtonActive {
   background-color: #6F757C;
 }
+
+@media (max-width: 640px) {
+  .header-image {
+    width: 100vw;
+    min-width: 100vw;
+    height: 17rem;
+    object-fit: fill;
+  }
+
+  .container-coffee {
+    max-width: 18.13rem;
+    top: -22vh;
+  }
+
+  .container-coffee-header img {
+    position: absolute;
+    top: 2rem;
+    z-index: -1;
+    margin-left: 14.8rem;
+    width: 14.2rem;
+    clip-path: inset(0% 24.5% 0% 0%)
+  }
+
+}
+
+@media (max-width: 1024px) {}
