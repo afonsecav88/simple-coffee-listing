@@ -1,50 +1,33 @@
-# React + TypeScript + Vite
+# Simple Coffee Listing ,creada con React, Typescript, CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Esta app es un desafio frontend: https://devchallenges.io/challenge/simple-coffee-listing
 
-Currently, two official plugins are available:
+## Aplicación que consume la data:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://raw.githubusercontent.com/devchallenges-io/web-project-ideas/main/front-end-projects/data/simple-coffee-listing-data.json
 
-## Expanding the ESLint configuration
+## Historias de Usuario
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+✅ Create a coffee listing page that matches the given design.
 
-- Configure the top-level `parserOptions` property like this:
+✅ Use React or other Front-end libraries for this challenge.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+✅ Create a Reusable Card component.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+✅ The card component should include a picture, name, pricing, rating, and number of votes if exists.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+✅ The card component should render popular tag, availability status conditionally.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+✅ Render Coffee list with given data. The data should come from a given API or downloaded JSON file.
+
+✅ Users can choose to list all products or just available products.
+
+✅ Deploy the solution and submit Repository URL and Demo URL.
+
+### Levantar la aplicación en desarrollo 🚀
+
+1. Para instalar dependencias de desarrollo `npm install`
+2. Para levantar el server de desarrollo `npm run dev`
+3. Para hacer el build de la app `npm run build`
+
+> NOTA: La app esta desplegada en este URL :
