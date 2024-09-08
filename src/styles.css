@@ -74,10 +74,6 @@
   border-radius: .3rem;
 }
 
-.coffee-filter-button:hover {
-  background-color: #6F757C;
-}
-
 .coffee-cards-list {
   display: flex;
   flex-wrap: wrap;
@@ -135,4 +131,8 @@
   margin-left: 2.5rem;
   font-weight: bolder;
   color: #ED735D;
+}
+
+.isButtonActive {
+  background-color: #6F757C;
 }

@@ -10,19 +10,28 @@ export const CoffeeFilterButtons = ({
   isAllProducts,
 }: CoffeeFilterButtonsProps) => {
   const handleClickAll = () => {
+    if (isAllProducts) return;
     setIsAllProducts(true);
   };
   const handleClickAvaliable = () => {
+    if (!isAllProducts) return;
     setIsAllProducts(false);
   };
 
   return (
     <article className="coffee-filter-container">
-      <button onClick={handleClickAll} className="coffee-filter-button">
-        {/* style={{ backgroundColor: '#6F757C' }} */}
+      <button
+        onClick={handleClickAll}
+        className={`coffee-filter-button ${
+          isAllProducts === true && 'isButtonActive'
+        }`}>
         All Products
       </button>
-      <button onClick={handleClickAvaliable} className="coffee-filter-button">
+      <button
+        onClick={handleClickAvaliable}
+        className={`coffee-filter-button ${
+          isAllProducts !== true && 'isButtonActive'
+        }`}>
         Available Now
       </button>
     </article>

@@ -5,9 +5,8 @@ export const coffeService = async (): Promise<CoffeeResponse[] | undefined> => {
   try {
     const data = await fetch(apiCoffee);
     const resp = await data.json();
-    console.log(data);
     return resp;
   } catch (error) {
-    console.log(error);
+    console.log('Ha ocurrido un error', error);
   }
 };
