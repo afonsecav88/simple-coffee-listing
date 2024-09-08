@@ -15,9 +15,9 @@ export const CoffeeCardItem = ({ coffeeItem }: CoffeeCardItemProps) => {
       </div>
       <div className="card-rate-votes">
         {votes !== 0 ? (
-          <img src="src/assets/Star_fill.svg" alt="rating" />
+          <img src="./Star_fill.svg" alt="rating" />
         ) : (
-          <img src="src/assets/Star.svg" alt="rating" />
+          <img src="./Star.svg" alt="rating" />
         )}
         <p>{rating} </p>{' '}
         {votes ? (
