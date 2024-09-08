@@ -182,4 +182,29 @@
 
 }
 
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+  .header-image {
+    width: 100vw;
+    min-width: 100vw;
+    height: 17rem;
+    object-fit: fill;
+  }
+
+  .container-coffee {
+    max-width: 44.4rem;
+    padding: 0rem 0.2rem 5rem 0.2rem;
+    top: -22vh;
+  }
+
+  .container-coffee-header p {
+    min-width: 20rem;
+    text-align: center;
+    color: #6F757C;
+    margin: .5rem;
+    font-weight: 500;
+  }
+
+  .coffee-filter-container {
+    margin-bottom: 2.5rem;
+  }
+}
