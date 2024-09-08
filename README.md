@@ -30,4 +30,4 @@ https://raw.githubusercontent.com/devchallenges-io/web-project-ideas/main/front-
 2. Para levantar el server de desarrollo `npm run dev`
 3. Para hacer el build de la app `npm run build`
 
-> NOTA: La app esta desplegada en este URL :
+> NOTA: La app esta desplegada en este URL : https://fonsedev-simple-coffee-listing.netlify.app/
