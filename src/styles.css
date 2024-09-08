@@ -158,17 +158,26 @@
   }
 
   .container-coffee {
-    max-width: 18.13rem;
+    max-width: 20rem;
     top: -22vh;
   }
 
   .container-coffee-header img {
-    position: absolute;
-    top: 2rem;
-    z-index: -1;
-    margin-left: 14.8rem;
-    width: 14.2rem;
+    margin-left: 16rem;
+    width: 16rem;
     clip-path: inset(0% 24.5% 0% 0%)
+  }
+
+  .container-coffee-header p {
+    min-width: 20rem;
+    text-align: center;
+    color: #6F757C;
+    margin: .5rem;
+    font-weight: 500;
+  }
+
+  .coffee-filter-container {
+    margin-bottom: 2.5rem;
   }
 
 }
